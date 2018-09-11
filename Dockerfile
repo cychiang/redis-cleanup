@@ -4,5 +4,5 @@ COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt && rm requirements.txt
 
 WORKDIR /app
-COPY src/app.py /app
+COPY src/app.py /app/app.py
 CMD python3 app.py
